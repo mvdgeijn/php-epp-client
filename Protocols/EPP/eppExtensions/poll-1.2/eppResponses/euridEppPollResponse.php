@@ -39,10 +39,6 @@ class euridEppPollResponse extends eppPollResponse{
     const TYPE_NAMESERVERGROUP = "NAMESERVERGROUP";
     const TYPE_PAYMENT = "PAYMENT";
 
-    function __construct() {
-        parent::__construct();
-    }
-
     public function getContext(){
         $xpath = $this->xPath();
         $result = $xpath->query('/epp:epp/epp:response/epp:resData/poll-1.2:pollData/poll-1.2:context');
